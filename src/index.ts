@@ -1,7 +1,19 @@
-const handlePerson = (name: string, age: number, gender?: string): void => {
-  console.log(`name: ${name} age: ${age} gender: ${gender}`);
+interface Person {
+  name: string;
+  age: number;
+  gender: string;
+}
+
+const person = {
+  name: "GW",
+  age: 20,
+  gender: "male",
 };
 
-handlePerson("GW", 25, "male");
+const handlePerson = (person: Person): void => {
+  console.log(person.name, person.age, person.gender);
+};
+
+handlePerson(person);
 
 export {};
