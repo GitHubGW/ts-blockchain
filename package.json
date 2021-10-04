@@ -13,15 +13,19 @@
   "bugs": {
     "url": "https://github.com/GitHubGW/typescript-blockchain/issues"
   },
-  "homepage": "https://github.com/GitHubGW/typescript-blockchain#readme",
   "dependencies": {
+    "browserify": "^17.0.0",
     "crypto-js": "^4.1.1",
+    "gh-pages": "^3.2.3",
     "typescript": "^4.4.3"
   },
   "devDependencies": {
     "tsc-watch": "^4.5.0"
   },
   "scripts": {
-    "start": "tsc-watch --OnSuccess 'node dist/index.js'"
-  }
+    "start": "tsc-watch --OnSuccess 'node dist/index.js'",
+    "compile": "browserify dist/index.js > bundle.js",
+    "deploy": "gh-pages index.html"
+  },
+  "homepage":"https://githubgw.github.io/typescript-blockchain"
 }
