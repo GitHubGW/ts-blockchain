@@ -25,7 +25,7 @@
   "scripts": {
     "start": "tsc-watch --OnSuccess 'node dist/index.js'",
     "compile": "browserify dist/index.js > bundle.js",
-    "deploy": "gh-pages index.html"
+    "deploy": "gh-pages -d build"
   },
   "homepage":"https://githubgw.github.io/typescript-blockchain"
 }
