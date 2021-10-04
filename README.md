@@ -1,9 +1,12 @@
 # Typescript-Blockchain
 
 ## 🔗 Demo
+
 https://githubgw.github.io/typescript-blockchain
 
 ## 🖥 Preview
+
+<img src="preview.png "/>
 
 ## 🔥 Stack
 
